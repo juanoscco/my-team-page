@@ -1,0 +1,266 @@
+*,
+html {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* main.scss */
+
+// Importa tu fuente desde la carpeta de assets
+@font-face {
+  font-family: "Montserrat";
+  src: url("../assets/fonts/Montserrat/Montserrat-VariableFont_wght.ttf");
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("../assets/fonts/Poppins/Poppins-SemiBold.ttf");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("../assets/fonts/Poppins/Poppins-Regular.ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "PT Serif";
+  src: url("../assets/fonts/PT_Serif/PTSerif-Regular.ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "PT Serif";
+  src: url("../assets/fonts/PT_Serif/PTSerif-Bold.ttf");
+  font-weight: 700;
+  font-style: normal;
+}
+
+html,
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 90%;
+  max-width: 1000px;
+  margin: 1.6em auto;
+}
+
+// Header
+
+.header__top {
+  display: flex;
+  justify-content: space-between;
+  h1 {
+    color: #000;
+    font-family: PT Serif;
+    font-size: 2.25rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -0.10125rem;
+  }
+  article {
+    h2 {
+      color: #000;
+      font-family: Poppins;
+      font-size: 1.125rem;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+      text-transform: uppercase;
+    }
+    p {
+      color: #000;
+      font-family: Poppins;
+      font-size: 1.125rem;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      width: 27.4375rem;
+      height: 5.4375rem;
+      flex-shrink: 0;
+    }
+  }
+}
+// end to Header
+
+.section__pictures {
+  margin-top: 4.5rem;
+  display: grid;
+  grid-auto-columns: 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    ". . ."
+    ". . .";
+  // place-items: center;
+  column-gap: 7.5rem;
+  row-gap: 7.5rem;
+  article {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    &:nth-child(2) {
+      padding-top: 5rem;
+    }
+    &:nth-child(5) {
+      padding-top: 5rem;
+    }
+    section {
+      display: flex;
+      gap: 0.5rem;
+      img {
+        width: 14.875rem;
+        height: 21.3125rem;
+        flex-shrink: 0;
+      }
+      p {
+        writing-mode: vertical-lr;
+        color: #000;
+        font-family: PT Serif;
+        font-size: 0.75rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        text-transform: uppercase;
+      }
+    }
+    p {
+      color: #000;
+      font-family: "Poppins";
+      font-size: 1.125rem;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+    }
+  }
+}
+
+footer {
+  padding-top: 10rem;
+  color: #a9a9a9;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  a {
+    color: #a9a9a9;
+    font-family: Montserrat;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-decoration-line: underline;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .section__pictures {
+    column-gap: 0.5rem;
+    row-gap: 6.5rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header__top {
+    flex-direction: column;
+    gap: 1rem;
+    padding-left: 1rem;
+    h1 {
+      font-size: 2.25rem;
+      letter-spacing: -0.10125rem;
+    }
+  }
+
+  .section__pictures {
+    margin-top: 0.5rem;
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      ". ."
+      ". ."
+      ". .";
+    place-items: center start;
+    article {
+      &:nth-child(5) {
+        padding-top: 0rem;
+      }
+      &:nth-child(4) {
+        padding-top: 5rem;
+      }
+      &:nth-child(6) {
+        padding-top: 5rem;
+      }
+      section {
+        img {
+          width: 12.66994rem;
+          height: 17.0625rem;
+          flex-shrink: 0;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 600px) {
+  .header__top {
+    padding-left: 0;
+    gap: 2.5rem;
+    h1 {
+      font-size: 1.85rem;
+      letter-spacing: -0.10125rem;
+    }
+    article {
+      h2 {
+        font-size: 1.125rem;
+      }
+      p {
+        font-size: 0.875rem;
+        width: 20.8125rem;
+      }
+    }
+  }
+
+  .section__pictures {
+    margin-top: 0;
+    place-items: center;
+    column-gap: 0.5rem;
+    article {
+      section {
+        img {
+          width: 8.66994rem;
+          height: 13.0625rem;
+          flex-shrink: 0;
+        }
+        p {
+          font-size: 0.625rem;
+        }
+      }
+      p {
+        font-size: 0.875rem;
+      }
+    }
+  }
+  footer {
+    padding-top: 4rem;
+    font-size: 0.675rem;
+    a {
+      font-size: 0.675rem;
+    }
+  }
+}
