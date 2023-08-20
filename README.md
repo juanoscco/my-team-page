@@ -32,9 +32,9 @@
 
 <!-- OVERVIEW -->
 
-## Overview
+## O![the-creative-crew](https://github.com/JuanOsccoMori/my-team-page/assets/58866695/debe19d2-8ba9-49f2-bbad-0d9fdf33b9cc)
+verview
 
-![screenshot](https://user-images.githubusercontent.com/16707738/92399059-5716eb00-f132-11ea-8b14-bcacdc8ec97b.png)
 
 You can see my demo at this URL:
 
