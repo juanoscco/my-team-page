@@ -32,7 +32,7 @@
 
 <!-- OVERVIEW -->
 
-## O![the-creative-crew](https://github.com/JuanOsccoMori/my-team-page/assets/58866695/debe19d2-8ba9-49f2-bbad-0d9fdf33b9cc)
+## ![the-creative-crew](https://github.com/JuanOsccoMori/my-team-page/assets/58866695/debe19d2-8ba9-49f2-bbad-0d9fdf33b9cc)
 verview
 
 
